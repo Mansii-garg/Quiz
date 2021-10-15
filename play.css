@@ -1,0 +1,139 @@
+body {
+    height: 100vh;
+    background-image: url(wp1920336.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: azure;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.play-box {
+    position:absolute;
+    color:rgb(248, 249, 250);
+    top: 25%;
+    left: 10%;
+    width: 480px;
+    border-radius: 10px;
+}
+
+.play-box #ques-header {
+    position: relative;
+    border-bottom: 1.5px solid lightgrey;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    border-radius: 5px 5px 0 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.play-box .ques-box {
+    padding: 15px 20px 20px 20px;
+}
+
+.play-box .ques-box #question {
+    padding-bottom: 8px;
+    width: 100%;
+}
+
+.play-box .ques-box .choice-container {
+    width: 100%;
+    display: flex;
+    margin-bottom: 8px;
+    font-size: 15px;
+    border: 1.5px solid #000000;
+    background-color: rgb(248, 249, 250);
+    color: #000000;
+}
+
+.play-box .ques-box .choice-container .choice-no {
+    background-color: #d1cf4bd3;
+    padding: 7px;
+    color: brown;
+}
+
+.option {
+    padding: 7px;
+    width: 100%;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.5rem 1.4rem 0 #f5f255d3;
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+footer {
+    border-top: 1.5px solid lightgrey;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ques-no{
+    float: "left";
+    margin-top: 14px;
+    margin-left: 20px;
+    color: #6d6b6ad3;
+}
+
+.ques-box .choice-container .correct {
+    background-color: #17bb56;
+}
+
+.ques-box .choice-container .incorrect {
+    background-color: #dd0b0b;
+}
+
+.restart {
+    margin-top: 50px;
+    margin-left: 60px;
+    text-align: center;
+    font-size: 1.8rem;
+    width: 8rem;
+    padding: 0.8rem 0;
+    border: 0.2rem solid #d1cf4bd3;
+    border-radius: 20px 4px;
+    font-weight: 400;
+    background-color: aliceblue;
+    color: brown;
+}
+
+.restart:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 #f5f255d3;
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+@media screen and (max-width: 534px) {
+    body {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .play-box {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 430px){
+    body {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .play-box {
+        width: 250px;
+    }
+}
+

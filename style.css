@@ -1,0 +1,75 @@
+body {
+    background-image: url(wp1920336.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: azure;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.container {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 80rem;
+    margin-left: 5rem;
+}
+
+.container > * {
+    width: 100%;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.container .flex-center h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.button {
+    text-align: center;
+    font-size: 1.8rem;
+    width: 10rem;
+    padding: 0.8rem 0;
+    border: 0.3rem solid #d1cf4bd3;
+    border-radius: 20px 4px;
+    text-decoration: none;
+    margin-top: 20px;
+    font-weight: 400;
+    background-color: aliceblue;
+    color: brown;
+}
+
+.button:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 #f5f255d3;
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+.play-box {
+    position:absolute;
+    color: black;
+    background-color: #d1cf4bd3;
+    top: 30%;
+    left: 10%;
+    width: 500px;
+    border-radius: 10px;
+
+}
